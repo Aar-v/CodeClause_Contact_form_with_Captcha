@@ -1,0 +1,153 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing:border-box;
+    
+}
+body {
+    font-family: "Roboto" ,sans-serif;
+    background: #ffffff;
+}
+.Contact-form{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    width:90%;
+    height: 500px;
+    max-width:450px;
+    background:#89c5f7;
+    padding: 20px 40px;
+    box-shadow: 0px 5px 10px rgba(12, 48, 148, 0.1);
+}
+.Contact-form .formtitle{
+    font-family: 'Franklin Gothic Medium',  sans-serif ;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+    margin: 20px 0px 30px;
+    color: #111;
+
+}
+.Contact-form .forminput label,
+.Contact-form .forminputm label,
+.Contact-form .captcha label{
+    display: block;
+    font-size: 15px;
+    color: #111;
+    margin-bottom: 0px;
+}
+.Contact-form .forminput input{
+    width: 100%;
+    padding:10px;
+    border: 1px solid #888;
+    font-size: 15px;
+}
+
+
+.forminputm {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.forminputm label {
+    margin-bottom: 5px;
+}
+
+.forminputm input[type="text"] {
+    width: 100%;
+    padding: 5px;
+    box-sizing: border-box;
+    line-height: 1.4;
+    font-family: monospace; /* Optional: Use a monospace font for consistent character width */
+}
+
+.forminputm input[type="text"]::placeholder {
+    text-align: left; /* Align placeholder text to the left */
+}
+
+.forminputm input[type="text"]::-webkit-input-placeholder {
+    text-align: left; /* Safari */
+}
+
+.forminputm input[type="text"]::-moz-placeholder {
+    text-align: left; /* Firefox 19+ */
+}
+
+.forminputm input[type="text"]:-ms-input-placeholder {
+    text-align: left; /* IE 10+ */
+}
+
+.forminputm input[type="text"]:-moz-placeholder {
+    text-align: left; /* Firefox 18- */
+}
+
+/* Limit the text to 60 characters per line */
+.forminputm input[type="text"] {
+    max-width: calc(60ch + 10px); /* Adjust the padding as needed */
+}
+
+.Contact-form .captcha{
+    margin: 15px 0px;
+}  
+
+.Contact-form .captcha{
+    color: #555;
+    width: 100%;
+    text-align: centre;
+    height: 40px;
+    line-height: 40px;
+    letter-spacing: 8px;
+    border: 1px dashed #888;
+    font-family:"monospace" ;
+}
+
+.Contact-form .captcha .preview span{
+    display:inline-block;
+    user-select: none;
+}
+
+.Contact-form .captcha .captcha-form{
+    display:flex;
+}
+
+.Contact-form .captcha .captcha-form input{
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #888;
+}
+
+.captcha-refresh{
+    width: 70px;
+    height: 40px;
+    border: solid;
+    border-width: 2px;
+    border-color: #111;
+    padding: 5px;
+    background:#52b1d6f5;
+    color:#eee;
+    cursor:pointer;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+
+.Contact-form .submit-btn{
+    margin-top: 10px;
+    width:90%;
+    padding:10px;
+    border:none;
+    outline: none;
+    font-size: 15px;
+    text-transform: uppercase;
+    /* background:#4c81ff; */
+    color:#fff;
+    cursor: pointer;
+    position: absolute;
+    left :10px;
+    top:420px;
+    text-align: center;
+}
